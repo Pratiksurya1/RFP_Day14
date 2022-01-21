@@ -29,6 +29,7 @@ namespace LinkdList_Test
             number.AddAfter(2, 40);
             int a =number.Length();
             Console.WriteLine(a);
+            number.Pop();
         }
     }
 }

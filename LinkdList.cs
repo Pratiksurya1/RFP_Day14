@@ -111,6 +111,21 @@ namespace LinkdList_Test
                 p.next = temp;
             }
         }
+        public void Pop()
+        {
+            Node temp;
+             if(this.head == null)
+            {
+                Console.WriteLine("No elements");
+            }
+            else
+            {
+                temp=this.head;
+                Console.WriteLine(temp.data);
+                head=head.next;
+                temp.next = null;        
+            }
+        }
 
     }
 }
