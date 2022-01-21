@@ -29,6 +29,10 @@ namespace LinkdList_Test
             number.InsertAfter(30,40);
             number.remove(70);
 
+            number.SortedLinkedList(10);
+            number.SortedLinkedList(5);
+            number.SortedLinkedList(20);
+
         }
     }
 }

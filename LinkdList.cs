@@ -190,5 +190,43 @@ namespace LinkdList_Test
             Console.WriteLine(p.data+" is removed");
             p.next = null;
         }
+
+        public void SortedLinkedList(int data)
+        {
+            int count = 0;
+            Node temp;
+            Node node=new Node(data);
+            if (this.head != null)
+            {
+                 temp=this.head;
+                int key = node.data;
+                while(temp.next != null && temp.next.data < key)
+                {
+                    count++;
+                    temp=temp.next;
+                }
+                node.next = temp.next;
+                Console.WriteLine("enter " + count + " positon ");
+                temp.next = node;
+            }
+            
+            
+
+        }
     }
 }
+//Node node = new Node(data);
+
+//if (this.head == null)
+//{
+//    this.head = node;
+//}
+//else
+//{
+//    Node temp = head;
+//    while (temp.next != null)
+//    {
+//        temp = temp.next;
+//    }
+//    temp.next = node;
+//}
