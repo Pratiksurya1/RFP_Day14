@@ -30,6 +30,7 @@ namespace LinkdList_Test
             int a =number.Length();
             Console.WriteLine(a);
             number.Pop();
+            number.PopLast();;
         }
     }
 }

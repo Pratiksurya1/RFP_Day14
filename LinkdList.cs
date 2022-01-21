@@ -126,6 +126,25 @@ namespace LinkdList_Test
                 temp.next = null;        
             }
         }
+        public void PopLast()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("No elements");
+            }
+            else
+            {
+                Node secondLast=head;
+                Node temp = head;
+                while (temp.next != null)
+                {
+                    secondLast = temp;
+                    temp = temp.next;
+                }
+                Console.WriteLine(secondLast.data);
+                temp.next=null;
+            }
+        }
 
     }
 }
