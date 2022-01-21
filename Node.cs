@@ -14,6 +14,7 @@ namespace LinkdList_Test
         public Node(int data)
         {
             this.data = data;
+
         }
     }
 }

@@ -14,6 +14,7 @@ namespace LinkdList_Test
             number.Add(56);
             number.Add(30);
             number.Add(70);
+
         }
     }
 }

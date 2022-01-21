@@ -28,7 +28,7 @@ namespace LinkdList_Test
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0} inserted into linked list", node.data);
+            Console.WriteLine("{0} inserted into linked list", node.data); 
         }
     }
 }
