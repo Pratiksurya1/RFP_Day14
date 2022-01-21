@@ -174,5 +174,21 @@ namespace LinkdList_Test
             Console.WriteLine("{0} inserted into after {1} linked list", node.data, p.data);
             p.next = node.next;
         }
+        public void remove(int value)
+        {
+            Node p=this.head;
+            Node temp;
+            Node sLValue=head;
+
+            while (p.data != value)
+            {
+                sLValue = p;
+                p= p.next;
+            }
+           // temp=p.next;
+            sLValue.next=p.next;
+            Console.WriteLine(p.data+" is removed");
+            p.next = null;
+        }
     }
 }

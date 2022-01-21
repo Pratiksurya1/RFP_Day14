@@ -27,6 +27,7 @@ namespace LinkdList_Test
             number.AddLast(30);
             number.AddLast(70);
             number.InsertAfter(30,40);
+            number.remove(70);
 
         }
     }
