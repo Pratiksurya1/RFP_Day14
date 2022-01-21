@@ -11,6 +11,10 @@ namespace LinkdList_Test
         public static void Main(String[] args)
         {
             LinkedList number = new LinkedList();
+            //LinkedList<int> list = new LinkedList<int>();
+            //list.AddFirst(1);
+            //list.AddAfter(0,20);
+
             //number.Add(56);
             //number.Add(30);
             //number.Add(70);
@@ -22,7 +26,9 @@ namespace LinkdList_Test
             number.AddLast(56);
             number.AddLast(30);
             number.AddLast(70);
-
+            number.AddAfter(2, 40);
+            int a =number.Length();
+            Console.WriteLine(a);
         }
     }
 }
