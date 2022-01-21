@@ -146,5 +146,18 @@ namespace LinkdList_Test
             }
         }
 
+        public void Find(int value)
+        {
+            Node temp=head;
+            int count=0;
+
+            while (temp.data != value)
+            {
+                count++;
+                temp = temp.next;
+            }
+            Console.WriteLine(value+" index value is " + count); 
+        }
+
     }
 }

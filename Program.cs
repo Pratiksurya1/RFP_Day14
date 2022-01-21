@@ -27,10 +27,11 @@ namespace LinkdList_Test
             number.AddLast(30);
             number.AddLast(70);
             number.AddAfter(2, 40);
-            int a =number.Length();
-            Console.WriteLine(a);
-            number.Pop();
-            number.PopLast();;
+           // int a =number.Length();
+           // Console.WriteLine(a);
+            //number.Pop();
+          //  number.PopLast();;
+            number.Find(30);
         }
     }
 }
