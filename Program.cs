@@ -14,9 +14,14 @@ namespace LinkdList_Test
             //number.Add(56);
             //number.Add(30);
             //number.Add(70);
-            number.AddFirst(56);
-            number.AddFirst(30);
-            number.AddFirst(70);
+
+            //number.AddFirst(56);
+            //number.AddFirst(30);
+            //number.AddFirst(70);
+
+            number.AddLast(56);
+            number.AddLast(30);
+            number.AddLast(70);
 
         }
     }
