@@ -158,6 +158,21 @@ namespace LinkdList_Test
             }
             Console.WriteLine(value+" index value is " + count); 
         }
+        public void InsertAfter(int refData,int data)
+        {
+            Node p=this.head;
+            Node temp;
 
+            while(p.data != refData)
+            {
+                p= p.next;
+            }
+            Node node = new Node(data);
+            temp=node;
+            temp.next = p.next;
+            p.next = node.next;
+            Console.WriteLine("{0} inserted into after {1} linked list", node.data, p.data);
+            p.next = node.next;
+        }
     }
 }
